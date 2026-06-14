@@ -53,8 +53,8 @@ function checkLowestProduct(inventory) {
   for (let item of inventory) {
     if (item.quantity < lowestProduct.quantity) {
       lowestProduct = item;
-  };
-};
+  }
+}
   return "สินค้าที่มีจำนวนต่ำที่สุดในคลังสินค้าคือ " + lowestProduct.name + " ซึ่งมี " + lowestProduct.quantity + " ชิ้น";
 };
 console.log(checkLowestProduct(inventory));
